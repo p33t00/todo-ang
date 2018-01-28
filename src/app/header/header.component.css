@@ -1,0 +1,193 @@
+/****	 HEADER    ****/
+
+/*.top-head:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}*/
+.top-head {
+  padding: 8px 0 8px 9px;
+  height: 60px;
+  background-color: #9db904;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+  position: relative;
+}
+.top-head ul li{
+  display: inline-block;
+}
+.top-head > div {
+  display: table;
+  height: 100%;
+}
+.top-head .mid-head {
+  margin: 0 auto;
+}
+.top-head > div > h3 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.head-right div, .head-left div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.head-right {
+  float: right;
+  padding: 10px 0;
+}
+.head-right div {
+  border-right: 1px solid #f4f4f4;
+  padding: 0 15px;
+}
+.head-right div:last-child {
+  border: none;
+}
+.head-right div > a {
+  display: table;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 13px;
+}
+.head-right div > a > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.head-right a img {
+  margin: 0 auto;
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.head-right span {
+  padding-left: 5px;
+  display: table-cell;
+  height: 100%;
+  line-height: 20px;
+  /*vertical-align: middle;*/
+}
+
+.head-left {
+  float: left;
+}
+.head-left a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+.head-left a div {
+  margin: 0 3px;
+  width: 50px;
+  display: block;
+}
+.head-left a img {
+  margin: 0 auto;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.head-left a:hover img {
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+}
+.head-left a:hover img + span {
+  display: block;
+}
+.head-left a span {
+  font-weight: bold;
+  margin-top: 3px;
+  display: none;
+  font-size: 9px;
+  color: white;
+  text-align: center;
+}
+#settings {
+  display: none;
+}
+.horizontal-menu-trigger {
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  .top-head .head-left {
+    display: table;
+  }
+}
+
+
+@media (max-width: 450px) {
+  .top-head .head-left {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    width: inherit;
+  }
+
+  .head-left > a div {
+    width: auto;
+  }
+
+
+  .head-left a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .head-left > div {
+    background-color: purple;
+    opacity: 0.4;
+    display: table;
+    width: inherit;
+  }
+
+  /*#horizontal-menu-trigger {*/
+    /*background-color: #d8ff06;*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*height: 30px;*/
+    /*border: 1px solid purple;*/
+    /*border-radius: 0 0 15px 15px;*/
+  /*}*/
+
+  .head-left a {
+    padding: 10% 0;
+  }
+
+  .head-left a:hover img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .head-left a div {
+    margin: 0 auto;
+  }
+
+  #settings {
+    display: table;
+    float: left;
+  }
+
+  #settings > div {
+    display: table-cell;
+    height: inherit;
+    vertical-align: middle;
+  }
+
+  #settings img {
+    height: 30px;
+    width: 30px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+@media (max-width: 300px) {
+  .top-head .mid-head {
+    display: none;
+  }
+}
