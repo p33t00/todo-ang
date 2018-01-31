@@ -12,7 +12,7 @@
   background-color: #9db904;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
   z-index: 2;
-  position: relative;
+  position: fixed;
 }
 .top-head ul li{
   display: inline-block;
