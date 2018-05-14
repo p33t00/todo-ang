@@ -17,6 +17,7 @@ import {Router} from "@angular/router";
 export class LoginComponent implements OnInit {
   authForm: FormGroup;
   message: string;
+  is_email_valid = false;
 
   constructor(
     public fb: FormBuilder,
@@ -24,7 +25,7 @@ export class LoginComponent implements OnInit {
     public router: Router
   ) {
     this.authForm = fb.group({
-      email:  ['', Validators.required],
+      email:  ['', [Validators.required, Validators.email]],
       password:   ['', Validators.required],
       remember:   ['']
     });
@@ -39,5 +40,6 @@ export class LoginComponent implements OnInit {
       err => {if (err.status === 401){_this.message = 'Invalid Credentials'; }}
     );
   }
+
   ngOnInit() {}
 }

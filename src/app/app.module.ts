@@ -4,20 +4,19 @@ import {
   FormsModule,
   ReactiveFormsModule,
   FormBuilder
-} from "@angular/forms";
+} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
-import { RouterModule, Routes } from "@angular/router";
-import { HttpModule } from "@angular/http";
+import { RouterModule } from '@angular/router';
+import { HttpModule } from '@angular/http';
 import { LoginComponent } from './login/login.component';
 
-import { AuthService } from "./auth.service";
+import { AuthService } from './auth.service';
 
-import { AllRouteGuard } from "./all-route-guard";
+import { AllRouteGuard } from './all-route-guard';
 import { HeaderComponent } from './header/header.component';
 import { SidebarLeftComponent } from './sidebar-left/sidebar-left.component';
 
-import { VerticalMenuDirective } from "./sidebar-left/directives";
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { VerticalMenuDirective } from "./sidebar-left/directives";
     AdminComponent,
     LoginComponent,
     HeaderComponent,
-    SidebarLeftComponent,
-    VerticalMenuDirective
+    SidebarLeftComponent
   ],
   imports: [
     RouterModule.forRoot([
