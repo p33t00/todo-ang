@@ -1,0 +1,26 @@
+<form [formGroup] = "authForm"
+      class="form-signin"
+      #f="ngForm"
+      (ngSubmit)="onSubmit(f)"
+>
+  <input
+    type="email"
+    id="inputEmail"
+    class="form-control"
+    placeholder="Email"
+    [formControl]="authForm.controls['email']"
+    required autofocus>
+  <input
+    type="password"
+    id="inputPassword"
+    class="form-control"
+    placeholder="Password"
+    [formControl]="authForm.controls['password']"
+    required>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" value="remember-me" [formControl]="authForm.controls['remember']"> Remember me
+    </label>
+  </div>
+  <button class="btn btn-lg btn-primary" type="submit" [disabled]="f.invalid">Sign in</button>
+</form>

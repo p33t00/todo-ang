@@ -1,0 +1,210 @@
+/****	 LEFT SIDEBAR    ****/
+
+.sidebar-left {
+  position: fixed;
+  padding-top: 80px;
+  top: 0;
+  left: 0;
+  /*position: relative;*/
+  /*margin-top: -55px;*/
+  margin-left: 0.5%;
+  height: 100%;
+  background-color: #383838;
+  color: #f4f4f4;
+}
+
+.hov {
+  padding: 5px 5px 5px 10px;
+  margin: 0 10% 0 5%;
+  border-bottom: 1px solid #404040;
+  overflow: hidden;
+}
+
+nav {
+  font-size: 1.1em;
+}
+
+nav > a {
+  padding: 10px 0;
+  border-left: 5px solid #383838;
+  display: block;
+}
+
+nav > a:hover, nav > a:active {
+  border-left: 5px solid #d8ff06;
+  color: #d8ff06;
+}
+
+nav a:last-child div {
+  border: none;
+}
+
+.a-main {
+  width: 92px;
+  height: 92px;
+  /*background-image: url("img/a-main.png");*/
+  /*background-repeat: no-repeat;*/
+}
+
+.color-link {
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.color-link ul li {
+  padding: 5px 0;
+}
+
+.blue {	color: #00bfc6; }
+.grey {	color: #C9CAC3; }
+.red { color: #c60000; }
+.yellow { color: #ecef0c; }
+
+.blue:hover {
+  color: #0CF0FB;
+}
+.grey:hover {
+  color: #FDFDFC;
+}
+.red:hover {
+  color: #F61111;
+}
+.yellow:hover {
+  color: #FCFE6A;
+}
+
+/**** list menu ****/
+@media (orientation: portrait) and (max-width: 700px), (orientation: landscape) and (max-height: 550px) {
+  /****************/
+  /*	SIDE MENU	*/
+  /****************/
+  .sidebar-left {
+    width: 15px;
+    padding-top: 55px;
+    margin-left: 0;
+    overflow: hidden;
+  }
+  #vertical-side-menu-trigger {
+    background-image: url("../../assets/img/BO-Play-Free-Black-Dotted-Seamless-Pattern.jpg");
+    background-size: 50px 100px;
+    background-position: center;
+    box-shadow: 2px 2px 3px grey;
+    /*margin-top: 55px;*/
+    width: 15px;
+    height: inherit;
+    display: table-cell;
+    /*background-size: 150% 20%;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*float: right;*/
+  }
+  /*#vertical-side-menu-trigger a {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-size: 60% 11%;*/
+  /*}*/
+  .sidebar-left > div{
+    width: 96%;
+    float: left;
+    height: inherit;
+    display: table-cell;
+    overflow: scroll;
+  }
+  .sidebar-left > div > div{
+    display: table;
+    width: 100%;
+    height: inherit;
+  }
+  nav > a {
+    border: none;
+    font-size: 1.2em;
+    padding: 15px 0;
+
+  }
+  nav, .color-link {
+    display: none;
+  }
+  .color-link {
+    padding: 0;
+    height: 100%;
+    position: relative;
+  }
+  .color-link ul {
+    padding: 20px 0;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  nav .hov {
+    border: none;
+  }
+       /*	SIDE MENU END	*/
+}
+/*
+@media (max-height: 700px) {
+  nav > a {
+    display: inline-block;
+    width: 32.8%;
+  }
+  .sidebar-left > div{
+    width: 97%;
+  }
+}*/
+
+/**** Grid nav menu ****/
+@media (orientation: landscape) and (max-height: 450px) {
+/*@media (orientation: landscape) and (max-height: 500px) {*/
+  .color-link li {
+    display: inline-block;
+    width: 26%;
+    margin: 0 auto;
+  }
+  .color-link {
+    /*position: initial;*/
+  }
+  nav {
+    display: table;
+    text-align: center;
+  }
+  nav > a {
+    border: none;
+    display: inline-table;
+    width: 32%;
+    vertical-align: middle;
+    height: 100px;
+  }
+  nav > a:hover, nav > a:active {
+    border: 1px solid #d8ff06;
+    color: #d8ff06;
+  }
+  nav .hov{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+  }
+  .sidebar-left > div{
+    width: 97%;
+  }
+  nav .hov {
+    border: none;
+  }
+}
+
+/*@media (orientation: landscape) and (max-width: 350px) {
+!*@media (max-width: 350px) {*!
+  #vertical-side-menu-trigger {
+    background-size: 150% 20%;
+  }
+  .sidebar-left > div{
+    width: 95%;
+  }
+}*/
+
+
