@@ -126,9 +126,9 @@ nav a:last-child div {
     padding: 15px 0;
 
   }
-  nav, .color-link {
+/*  nav, .color-link {
     display: none;
-  }
+  }*/
   .color-link {
     padding: 0;
     height: 100%;
@@ -141,6 +141,12 @@ nav a:last-child div {
   }
   nav .hov {
     border: none;
+  }
+  .side-b-expand {
+    width: 80%;
+  }
+    .side-b-shrink {
+    width: 15px%;
   }
        /*	SIDE MENU END	*/
 }

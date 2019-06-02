@@ -16,6 +16,10 @@ body {
   background-color: #eee;
 }
 
+h1 {
+  margin: 0 !important;
+}
+
 .container {
   background-color: #f4f4f4;
 }
@@ -70,4 +74,8 @@ a:hover {
 
 .hidden {
   visibility: hidden;
+}
+
+.simple-hide {
+  display: none;
 }
