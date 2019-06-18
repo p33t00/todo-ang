@@ -1,12 +1,17 @@
-.form-signin {
-  width: 230px;
-  height: 150px;
+.signin-form-wrapper {
+  width: 180px;
+  height: 200px;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+}
+.form-signin {
+  /*width: 230px;*/
+  /*height: 150px;*/
+  position: relative;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -28,13 +33,15 @@
   z-index: 2;
 }
 .form-signin input[type="email"] {
+  width: 100%;
   margin-bottom: -1px;
   border-radius: 10px 10px 0 0;
   border: none;
   color: #000;
 }
 .form-signin input[type="password"] {
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 0 0 10px 10px;
-  border: none;
+  /*border: none;*/
 }

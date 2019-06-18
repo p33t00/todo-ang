@@ -79,3 +79,8 @@ a:hover {
 .simple-hide {
   display: none;
 }
+
+form > .ng-invalid .ng-touched {
+  margin: 0 !important;
+  border: 1px solid red !important;
+}
