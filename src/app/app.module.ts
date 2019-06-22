@@ -8,7 +8,7 @@ import {
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { RouterModule } from '@angular/router';
-import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 
 import { AuthService } from './auth.service';
@@ -31,7 +31,7 @@ import { SidebarLeftComponent } from './sidebar-left/sidebar-left.component';
       {path: 'login', component: LoginComponent},
       {path: 'admin', component: AdminComponent, canActivate: [AllRouteGuard]}
     ]),
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     BrowserModule
