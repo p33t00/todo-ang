@@ -1,0 +1,16 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "window.zoomLevel": 0,
+    "editor.formatOnSave": false,
+    "prettier.eslintIntegration": true,
+    "prettier.tslintIntegration": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.htmlWhitespaceSensitivity": "strict",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+}

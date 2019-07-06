@@ -1,4 +1,4 @@
-{
+  {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
@@ -17,5 +17,8 @@
       "es2018",
       "dom"
     ]
-  }
+  },
+  "tslint": {
+    "args": ["--project", "${folder}"]
+  },
 }
